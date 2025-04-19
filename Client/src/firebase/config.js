@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBMbIuicHbL6ElDDe3uNkQd1ij4_JipiPs",
+  apiKey: "process.env.REACT_APP_API_KEY",
   authDomain: "roadmap-84cc3.firebaseapp.com",
   databaseURL: "https://roadmap-84cc3-default-rtdb.firebaseio.com",
   projectId: "roadmap-84cc3",
