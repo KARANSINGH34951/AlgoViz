@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import img from '../utils/Homeimgs/img.jpg'
+import { Link } from 'react-router-dom';
+import img from '../utils/Homeimgs/img.jpg';
 
 function HeroSection() {
   return (
@@ -11,7 +12,7 @@ function HeroSection() {
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="absolute inset-0 bg-black/20" />
-      <div className="text-center px-4 relative z-10"> {/* Added z-index */}
+      <div className="text-center px-4 relative z-10">
         <motion.h1
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
@@ -28,11 +29,12 @@ function HeroSection() {
         >
           Dive into interactive 3D visualizations guided by a sci-fi bot.
         </motion.p>
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:shadow-blue-500/50 transition-all neon-button"
+        <Link
+          to="/login"
+          className="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:shadow-blue-500/50 transition-all neon-button"
         >
-          <a href="/visualizer" className="block">Start Exploring</a>
-        </button>
+          Start Exploring
+        </Link>
       </div>
     </motion.section>
   );

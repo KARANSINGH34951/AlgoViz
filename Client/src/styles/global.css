@@ -17,3 +17,16 @@ body {
 button:hover, .neon-glow:hover {
   @apply shadow-glow;
 } */
+
+.google-btn {
+  transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+  margin-right: 10px;
+}
