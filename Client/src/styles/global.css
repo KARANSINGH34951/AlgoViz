@@ -1,0 +1,19 @@
+body {
+  @apply bg-gray-800 text-white;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.3);
+}
+/* 
+button:hover, .neon-glow:hover {
+  @apply shadow-glow;
+} */
